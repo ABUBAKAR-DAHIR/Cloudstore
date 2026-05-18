@@ -4,9 +4,6 @@
   <img src="public/logo.svg" alt="Uploader Logo" width="160"/>
 </p>
 
-
----
-
 A modern file uploader built with **Next.js** that uses **Tigris Object Storage (S3-compatible)** for direct browser uploads via presigned URLs.
 
 ---
@@ -23,7 +20,7 @@ Uploader aims to be a simple, production-ready starter for:
 - File listing & preview
 - Deleting uploaded files
 - Clean UI + good UX (toasts, loading states, progress)
----
+
 ## Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
@@ -33,7 +30,7 @@ Uploader aims to be a simple, production-ready starter for:
 ---
 ## 📂 Project Structure
 ```text
-uploader/
+Cloudstore/
 │
 ├── .next/                          # Next.js build output (auto-generated)
 │
@@ -75,10 +72,6 @@ uploader/
 │
 ├── public/
 │   ├── file.svg
-│   ├── globe.svg
-│   ├── next.svg
-│   ├── vercel.svg
-│   └── window.svg
 │
 ├── .env
 ├── next.config.ts
@@ -123,7 +116,7 @@ S3_BUCKET_NAME=?
 
 ## 👤 Author
 
-ABUBAKAR DAHIR HASSAN
+This application was developed by **ABUBAKAR DAHIR HASSAN**
 
 ## 📄 License
 This project is licensed under the MIT license.
