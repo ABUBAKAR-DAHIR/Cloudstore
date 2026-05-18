@@ -1,7 +1,4 @@
-<p align="center">
-
-# Cloudstore
-</p>
+<h1 align="center">Cloudstore</h1>
 
 <p align="center">
   <img src="public/logo.svg" alt="Uploader Logo" width="160"/>
