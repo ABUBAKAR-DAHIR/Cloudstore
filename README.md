@@ -7,9 +7,17 @@
 A modern file uploader built with **Next.js** that uses **Tigris Object Storage (S3-compatible)** for direct browser uploads via presigned URLs.
 
 ---
+
 ## Status
 The MVP of this project is done.
+
 We will add more functionalities in the upcoming iterations.
+
+## Demo
+
+Please visit the website.
+
+Live Link: [Cloudstore.com](https://cloudstore-xi.vercel.app/)
 
 ## Vision
 
