@@ -1,4 +1,7 @@
+<p align="center>
+
 # Cloudstore
+</p>
 
 <p align="center">
   <img src="public/logo.svg" alt="Uploader Logo" width="160"/>
@@ -27,7 +30,8 @@ Uploader aims to be a simple, production-ready starter for:
 - **UI/UX:** shadcn/ui components, dark/light theme, sonner toasts
 - **Storage:** Tigris Object Storage (S3-compatible)
 - **SDK:** AWS SDK v3 (`@aws-sdk/client-s3`, `@aws-sdk/s3-request-presigner`)
----
+
+
 ## 📂 Project Structure
 ```text
 Cloudstore/
