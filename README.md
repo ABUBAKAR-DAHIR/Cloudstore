@@ -94,7 +94,7 @@ Cloudstore/
 1. **Clone the project**
    ```bash
    git clone Cloudstore
-   cd uploader
+   cd Cloudstore
    ```
 2. **Install dependencies**
    ```bash
