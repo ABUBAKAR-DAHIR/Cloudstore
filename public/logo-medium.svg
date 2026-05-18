@@ -1,0 +1,52 @@
+<svg width="2048" height="2048" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:oklch(0.78 0.1308 38.7559)" />
+      <stop offset="100%" style="stop-color:oklch(0.6724 0.1308 38.7559)" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:oklch(0.6724 0.1308 38.7559)" />
+      <stop offset="100%" style="stop-color:oklch(0.55 0.1308 38.7559)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Layered cards effect (representing stored images) -->
+  <g transform="translate(1024, 1024)">
+    <!-- Back layer -->
+    <g opacity="0.3" transform="translate(-51.2, -51.2) rotate(-6)">
+      <rect x="-358.4" y="-281.6" width="716.8" height="563.2" rx="71.68" fill="url(#mainGradient)"/>
+    </g>
+    
+    <!-- Middle layer -->
+    <g opacity="0.5" transform="translate(-25.6, -25.6) rotate(-3)">
+      <rect x="-358.4" y="-281.6" width="716.8" height="563.2" rx="71.68" fill="url(#mainGradient)"/>
+    </g>
+    
+    <!-- Front layer with icon -->
+    <rect x="-358.4" y="-281.6" width="716.8" height="563.2" rx="71.68" fill="url(#mainGradient)"/>
+    
+    <!-- Cloud storage indicator in top right orange area -->
+    <g transform="translate(192, -192)" opacity="0.95">
+      <ellipse cx="51.2" cy="30.72" rx="46.08" ry="30.72" fill="#fff"/>
+      <ellipse cx="20.48" cy="38.4" rx="35.84" ry="25.6" fill="#fff"/>
+      <ellipse cx="81.92" cy="38.4" rx="35.84" ry="25.6" fill="#fff"/>
+      <rect x="20.48" y="38.4" width="61.44" height="20.48" fill="#fff"/>
+    </g>
+    
+    <!-- Camera/image icon in center -->
+    <g opacity="0.95">
+      <!-- Camera body -->
+      <rect x="-179.2" y="-102.4" width="358.4" height="256" rx="40.96" fill="none" stroke="#fff" stroke-width="17.92"/>
+      
+      <!-- Lens -->
+      <circle cx="0" cy="25.6" r="92.16" fill="none" stroke="#fff" stroke-width="17.92"/>
+      <circle cx="0" cy="25.6" r="51.2" fill="#fff" opacity="0.25"/>
+      
+      <!-- Viewfinder -->
+      <rect x="-40.96" y="-143.36" width="81.92" height="30.72" rx="10.24" fill="#fff"/>
+      
+      <!-- Flash indicator -->
+      <circle cx="102.4" cy="-76.8" r="20.48" fill="#fff" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
