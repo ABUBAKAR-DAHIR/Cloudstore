@@ -36,7 +36,7 @@ Cloudstore/
 ├── .next/                          # Next.js build output (auto-generated)
 │
 ├── app/                            # App Router directory
-│   ├── favicon.ico
+│   ├── favicon.svg
 │   ├── globals.css
 │   ├── layout.tsx
 │   ├── page.tsx

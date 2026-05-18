@@ -25,14 +25,6 @@
     <!-- Front layer with icon -->
     <rect x="-140" y="-110" width="280" height="220" rx="28" fill="url(#mainGradient)"/>
     
-    <!-- Cloud storage indicator in top right orange area -->
-    <g transform="translate(75, -75)" opacity="0.95">
-      <ellipse cx="20" cy="12" rx="18" ry="12" fill="#fff"/>
-      <ellipse cx="8" cy="15" rx="14" ry="10" fill="#fff"/>
-      <ellipse cx="32" cy="15" rx="14" ry="10" fill="#fff"/>
-      <rect x="8" y="15" width="24" height="8" fill="#fff"/>
-    </g>
-    
     <!-- Camera/image icon in center -->
     <g opacity="0.95">
       <!-- Camera body -->
@@ -47,6 +39,14 @@
       
       <!-- Flash indicator -->
       <circle cx="40" cy="-30" r="8" fill="#fff" opacity="0.6"/>
+    </g>
+    
+    <!-- Cloud storage indicator at top right of main card -->
+    <g transform="translate(95, -80)" opacity="0.95">
+      <ellipse cx="32" cy="20" rx="24" ry="16" fill="#fff"/>
+      <ellipse cx="14" cy="24" rx="18" ry="14" fill="#fff"/>
+      <ellipse cx="50" cy="24" rx="18" ry="14" fill="#fff"/>
+      <rect x="14" y="24" width="36" height="12" fill="#fff"/>
     </g>
   </g>
 </svg>
