@@ -1,0 +1,41 @@
+<svg width="3000" height="2400" viewBox="-900 -700 1800 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:oklch(0.78 0.1308 38.7559)" />
+      <stop offset="100%" style="stop-color:oklch(0.6724 0.1308 38.7559)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Layered cards effect -->
+  <g>
+    <!-- Back layer -->
+    <g opacity="0.3" transform="translate(-80, -80) rotate(-6)">
+      <rect x="-700" y="-550" width="1400" height="1100" rx="140" fill="url(#mainGradient)"/>
+    </g>
+    
+    <!-- Middle layer -->
+    <g opacity="0.5" transform="translate(-40, -40) rotate(-3)">
+      <rect x="-700" y="-550" width="1400" height="1100" rx="140" fill="url(#mainGradient)"/>
+    </g>
+    
+    <!-- Front layer -->
+    <rect x="-700" y="-550" width="1400" height="1100" rx="140" fill="url(#mainGradient)"/>
+    
+    <!-- Cloud in top right (dark color instead of white) -->
+    <g transform="translate(380, -380)" opacity="0.95">
+      <ellipse cx="100" cy="60" rx="90" ry="60" fill="oklch(0.2679 0.0036 106.6427)"/>
+      <ellipse cx="40" cy="75" rx="70" ry="50" fill="oklch(0.2679 0.0036 106.6427)"/>
+      <ellipse cx="160" cy="75" rx="70" ry="50" fill="oklch(0.2679 0.0036 106.6427)"/>
+      <rect x="40" y="75" width="120" height="40" fill="oklch(0.2679 0.0036 106.6427)"/>
+    </g>
+    
+    <!-- Camera icon (dark color instead of white) -->
+    <g opacity="0.95">
+      <rect x="-350" y="-200" width="700" height="500" rx="80" fill="none" stroke="oklch(0.2679 0.0036 106.6427)" stroke-width="35"/>
+      <circle cx="0" cy="50" r="180" fill="none" stroke="oklch(0.2679 0.0036 106.6427)" stroke-width="35"/>
+      <circle cx="0" cy="50" r="100" fill="oklch(0.2679 0.0036 106.6427)" opacity="0.25"/>
+      <rect x="-80" y="-280" width="160" height="60" rx="20" fill="oklch(0.2679 0.0036 106.6427)"/>
+      <circle cx="200" cy="-150" r="40" fill="oklch(0.2679 0.0036 106.6427)" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

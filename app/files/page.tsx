@@ -8,6 +8,7 @@ import { Spinner } from '@/components/ui/spinner'
 import { cn } from '@/lib/utils'
 import { useQuery } from '@tanstack/react-query'
 import { ArrowLeft, X } from 'lucide-react'
+import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { redirect, useRouter } from 'next/navigation'
 import { useState } from 'react'
@@ -34,6 +35,8 @@ function FilesPage() {
     // const file = new File(10, "sdj", "sgsdg");
     const [isDeleting, setIsDeleting] = useState<boolean>(false)
     const [deleted, setDeleted] = useState<boolean>(false)
+
+    const {theme} = useTheme()
 
     const removeFile = async(key: string) => {
         console.log("Deleting file...", key)
@@ -65,8 +68,6 @@ function FilesPage() {
             setIsDeleting(false)
         }
     }
-
-    
     
     return (
         <div>
@@ -74,6 +75,11 @@ function FilesPage() {
                 <Button className='flex cursor-pointer group' variant="link" onClick={() => router.back()}>
                     <ArrowLeft className='transition-all group-hover:-translate-x-1 duration-200'/>
                     <span>Go Back</span>
+                <div>
+                    {
+                        theme === "light" ? <Image src="/logo.svg" width={55} height={55} alt='logo' />  :   <Image src="/logo-dark.svg" width={55} height={55} alt='logo' />               
+                    }
+                </div>
                 </Button>
                 <Themer />
             </div>
@@ -111,9 +117,9 @@ function FilesPage() {
                                             </div>
                                         </DialogTrigger>
 
-                                        <DialogContent>
+                                        <DialogContent className='py-8'>
                                             <DialogHeader>
-                                                <h1 className='font-bold uppercase text-center p-2 border rounded-md mx-4 mr-6'>File deletion</h1>
+                                                <h1 className='font-bold uppercase text-center p-2 border rounded-md mx-4 mr-6 bg-red-500/10'>File deletion</h1>
                                             </DialogHeader>
                                             
                                             <div className='relative'>
@@ -122,17 +128,19 @@ function FilesPage() {
                                                     <h2 className='font-semibold text-center text-[16px]'>Are you sure you want to delete the file!</h2>
                                                     <p className='text-center my-4 text-[13px] mb-8'>The file will be permanently deleted if you proceed with the process. you can cancel it if you want.</p>
 
-                                                    <div className="flex justify-around my-4">
+                                                    <div className="flex justify-around mt-4">
                                                         <DialogClose>
                                                             <Button variant="secondary" className='cursor-pointer capitalize py-5 px-8'>Go back</Button>
                                                         </DialogClose>
-                                                        <Button variant="destructive" className='cursor-pointer capitalize py-5 px-8' onClick={() => removeFile(image.key)} >Delete</Button>
+                                                        <Button variant="destructive" className='cursor-pointer capitalize py-5 px-8 bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white duration-300 dark:hover:bg-red-500' onClick={() => removeFile(image.key)} >Delete</Button>
                                                     </div>
                                                 </div>
                                                 
                                                 {
                                                     isDeleting && (
-                                                        <Spinner className='size-40 absolute inset-0 translate-x-1/2 '/>
+                                                        <div className='absolute inset-0 w-full h-full flex items-start justify-center'>
+                                                            <Spinner className='size-35'strokeWidth={1}/>
+                                                        </div>
                                                     )
                                                 }
 
