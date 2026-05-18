@@ -8,8 +8,8 @@ A modern file uploader built with **Next.js** that uses **Tigris Object Storage 
 
 ---
 ## Status
-
-This project is currently in active development.
+The MVP of this project is done.
+We will add more functionalities in the upcoming iterations.
 
 ## Vision
 
@@ -24,7 +24,7 @@ Uploader aims to be a simple, production-ready starter for:
 ## Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
-- **UI/UX:** shadcn/ui components, dark/light theme, sonner toasts
+- **UI/UX:**  ShadCN UI components, dark/light theme, sonner toasts
 - **Storage:** Tigris Object Storage (S3-compatible)
 - **SDK:** AWS SDK v3 (`@aws-sdk/client-s3`, `@aws-sdk/s3-request-presigner`)
 
